@@ -7,10 +7,10 @@ resolver = "2"
 version = "3.0.0"
 
 [workspace.dependencies]
-cw-utils = { path = "packages/cw-utils" }
-cosmwasm-schema = "3.0.4"
-cosmwasm-std = { version = "3.0.4", default-features = false, features = ["std"] }
-cw-storage-plus = "3.0.1"
+cw-utils = { git = "https://github.com/permissionlessweb/cw-minus", branch = "main" }
+cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
+cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
 thiserror = "2.0.12"
 schemars = "0.8.4"
 semver = { version = "1.0.26", default-features = false }
