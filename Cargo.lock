@@ -394,7 +394,7 @@ dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-storage-plus",
- "cw-utils 3.0.0 (git+https://github.com/permissionlessweb/cw-minus?branch=zk-mvp)",
+ "cw-utils",
  "schemars 0.8.22",
  "serde",
  "thiserror 2.0.18",
@@ -445,18 +445,6 @@ dependencies = [
  "cosmwasm-std",
  "cw-storage-plus",
  "prost",
- "schemars 0.8.22",
- "serde",
- "thiserror 2.0.18",
-]
-
-[[package]]
-name = "cw-utils"
-version = "3.0.0"
-source = "git+https://github.com/permissionlessweb/cw-minus?branch=zk-mvp#5a4cff1fe65e1de8c2f98e222b94ec04c4517831"
-dependencies = [
- "cosmwasm-schema",
- "cosmwasm-std",
  "schemars 0.8.22",
  "serde",
  "thiserror 2.0.18",
