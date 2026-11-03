@@ -7,8 +7,8 @@ resolver = "2"
 version = "3.0.0"
 
 [workspace.dependencies]
-cosmwasm-schema = { package = "cosmwasm-schema", version = "=4.0.0-zk" }
-cosmwasm-std = { package = "cosmwasm-std", version = "=4.0.0-zk" }
+cosmwasm-schema = { package = "cosmwasm-schema", version = "=4.1.0" }
+cosmwasm-std = { package = "cosmwasm-std", version = "=4.1.0" }
 cw-storage-plus = { version = "3.0.1" }
 cw-utils = { path = "packages/cw-utils" }
 schemars = "0.8.4"
@@ -17,10 +17,9 @@ serde = { version = "1.0.219", default-features = false, features = ["derive"] }
 thiserror = "2.0.12"
 [patch.crates-io]
 
-cosmwasm-schema = { path = "../cosmwasm/packages/schema" }
-cosmwasm-std = { path = "../cosmwasm/packages/std" }
-cw-storage-plus = { path = "../cw-storage-plus" }
-
+cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", rev = "b303f445113c95427b57fc825bc033fdf3e6fee0" }
+cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", rev = "e20646e2d9a9c4f93e993eb0656afa795f6e387a" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", rev = "e20646e2d9a9c4f93e993eb0656afa795f6e387a" }
 [profile.release]
 rpath = false
 lto = true
